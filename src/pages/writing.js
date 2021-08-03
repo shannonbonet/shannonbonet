@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import NavBar from "../components/navBar"
 import Layout from "../components/layout"
 
