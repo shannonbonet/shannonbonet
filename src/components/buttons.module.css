@@ -1,43 +1,43 @@
 .button {
-    border: none;
-    padding: 8px 12px;
-    margin: 10px 5px;
-    border-radius: 4px;
-    text-align: center;
-    display: inline-block;
-    font-size: 17px;
-    text-decoration: none;
-    color: #0E141B;
-  }
-  
-  .button {
-    position: relative;
-    border-radius: 15px 15px 0px 0px;
-    outline: 0;
-    overflow: hidden;
-    background: none;
-    cursor: pointer;
-    transition: all 0.08s ease-in;
-    -o-transition: all 0.08s ease-in;
-    -ms-transition: all 0.08s ease-in;
-    -moz-transition: all 0.08s ease-in;
-    -webkit-transition: all 0.08s ease-in;
-  }
-  .button:hover {
-    color: #0E141B;
-    background: #FFE5D9;
-    transition: all 0.25s ease-in;
-  }
-  
-  .button:hover:before {
-    top: 0;
-  }
-  
-  .active {
-    color: #0E141B;
-    background: #FFE5D9;
-  }
+  border: none;
+  padding: 8px 12px;
+  margin: 10px 5px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+  color: #0e141b;
+}
 
-  .back {
-    padding: 60;
-  }
+.button {
+  position: relative;
+  border-radius: 15px 15px 0px 0px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  transition: all 0.08s ease-in;
+  -o-transition: all 0.08s ease-in;
+  -ms-transition: all 0.08s ease-in;
+  -moz-transition: all 0.08s ease-in;
+  -webkit-transition: all 0.08s ease-in;
+}
+.button:hover {
+  color: #0e141b;
+  background: #ece4db;
+  transition: all 0.25s ease-in;
+}
+
+.button:hover:before {
+  top: 0;
+}
+
+.active {
+  color: #0e141b;
+  background: #ffe5d9;
+}
+
+.back {
+  padding: 60;
+}
