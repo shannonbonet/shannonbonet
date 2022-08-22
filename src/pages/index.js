@@ -11,6 +11,7 @@ import UpArrow from "../assets/upArrow.svg";
 import { theme } from "../styles/theme";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
+import { recentData } from "../data/projectData";
 
 const IndexPage = ({ classes }) => {
   const name = "shannon bonet,";
@@ -89,7 +90,17 @@ const IndexPage = ({ classes }) => {
           </Boop>
         </div>
         <a id="project-grid">
-          <CardGrid />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              marginBottom: "10vh",
+            }}
+          >
+            <h1 style={{ paddingBottom: "50px" }}>recently...</h1>
+            <CardGrid cards={recentData} />
+          </div>
         </a>
         <div className={classes.homeDown}>
           <Boop rotation={20} timing={200}>

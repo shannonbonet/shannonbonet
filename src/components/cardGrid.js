@@ -5,46 +5,16 @@ import Card from "./projectCard";
 import { withStyles } from "@material-ui/core";
 import { styles } from "../styles/customStyles";
 
-const CardGrid = ({ classes }) => {
-  const titles = [
-    "siren",
-    "we care solar",
-    "daily californian",
-    "reading between the redlines",
-  ];
-  const roles = [
-    "project manager",
-    "software developer",
-    "web developer",
-    "data journalism",
-  ];
-  const links = [
-    "/siren",
-    "/wecaresolar",
-    "/dailycal",
-    "https://dailycal-projects.netlify.app/2021-07-10-redlining",
-  ];
-
+const CardGrid = ({ cards, classes }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginBottom: "10vh",
-      }}
-    >
-      <h1 style={{ paddingBottom: "50px" }}>projects</h1>
-      <div className={classes.grid}>
-        {titles.map((project, i) => {
-          return (
-            <Link to={links[i]} style={{ textDecoration: "none" }}>
-              {" "}
-              <Card title={project} image={i} role={roles[i]} />{" "}
-            </Link>
-          );
-        })}
-      </div>
+    <div className={classes.grid}>
+      {cards.map((project, i) => {
+        return (
+          <Link to={project.link} style={{ textDecoration: "none" }}>
+            <Card title={project.title} tag={project.tag} role={project.role} />{" "}
+          </Link>
+        );
+      })}
     </div>
   );
 };
@@ -52,7 +22,7 @@ const CardGrid = ({ classes }) => {
 export default withStyles(styles)(CardGrid);
 
 CardGrid.propTypes = {
-  titles: PropTypes.array,
-  roles: PropTypes.array,
-  links: PropTypes.array,
+  titles: PropTypes.arrayOf(String),
+  roles: PropTypes.arrayOf(String),
+  links: PropTypes.arrayOf(String),
 };

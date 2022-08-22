@@ -13,7 +13,7 @@ export const styles = () =>
     navBar: {
       display: "flex",
       flexDirection: "row-reverse",
-      padding: "20px",
+      padding: "10px",
     },
     icons: {
       display: "flex",

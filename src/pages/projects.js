@@ -1,19 +1,29 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import NavBar from "../components/navBar";
 import Layout from "../components/layout";
 import { withStyles } from "@material-ui/core";
 import { styles } from "../styles/customStyles";
-import Boop from "../components/boop";
 import CardGrid from "../components/cardGrid";
-import UpArrow from "../assets/upArrow.svg";
+import { projectData } from "../data/projectData";
 
 const Projects = ({ classes }) => {
+  const data = projectData.sort((a, b) => b.date - a.date);
+
   return (
     <Layout>
       <NavBar />
       <a id="project-grid">
-        <CardGrid />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginBottom: "10vh",
+          }}
+        >
+          <h1 style={{ paddingBottom: "50px" }}>projects</h1>
+          <CardGrid cards={data} />
+        </div>
       </a>
     </Layout>
   );

@@ -7,30 +7,20 @@ import Boop from "./boop";
 import Dots from "../assets/dots.svg";
 import Click from "../assets/click.svg";
 
-const ProjectCard = ({ classes, title, image, role }) => (
-  <Card className={classes.card}>
-    <Dots style={{ padding: "10px 0px 0px 15px" }} />
-    <div className="cardContent">
-      <h3 style={{ paddingBottom: "5px" }}>{title}</h3>
-    </div>
-    <div className="cardHidden">
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        {role} &ensp;
-        <Boop rotation={20} timing={200}>
-          {" "}
-          <Click />{" "}
-        </Boop>
-      </div>
-      <div style={{ width: "60%", paddingTop: "10px" }}>
-        {image == 0 ? (
+const ProjectCard = ({ classes, title, tag, role }) => {
+  const getImage = (title) => {
+    switch (title) {
+      case "siren":
+        return (
           <StaticImage
-            src={"../assets/wcs.svg"}
+            src={"../assets/siren.svg"} //huge L. https://stackoverflow.com/questions/66759909/how-to-pass-a-path-of-image-as-a-prop-in-gatsby-in-gatsby-plugin-image
             placeholder="blurred"
             alt="project image"
-            width={250}
-            height={200}
+            width={300}
           />
-        ) : image == 1 ? (
+        );
+      case "wcs":
+        return (
           <StaticImage
             src={"../assets/wcs.svg"}
             placeholder="blurred"
@@ -38,14 +28,18 @@ const ProjectCard = ({ classes, title, image, role }) => (
             width={300}
             imgStyle={{ paddingTop: "10px" }}
           />
-        ) : image == 2 ? (
+        );
+      case "dc":
+        return (
           <StaticImage
             src={"../assets/dailycal.svg"}
             placeholder="blurred"
             alt="project image"
             width={300}
           />
-        ) : image == 3 ? (
+        );
+      case "redlining":
+        return (
           <StaticImage
             src={"../assets/redlining.svg"}
             placeholder="blurred"
@@ -53,9 +47,47 @@ const ProjectCard = ({ classes, title, image, role }) => (
             width={250}
             height={200}
           />
-        ) : null}
+        );
+      case "cmu":
+        return (
+          <StaticImage
+            src={"../assets/cmu.svg"}
+            placeholder="blurred"
+            alt="project image"
+            width={250}
+          />
+        );
+
+      default:
+        return (
+          <StaticImage
+            src={"../assets/tbd.svg"}
+            placeholder="blurred"
+            alt="project image"
+            width={250}
+            height={200}
+          />
+        );
+    }
+  };
+
+  return (
+    <Card className={classes.card}>
+      <Dots style={{ padding: "10px 0px 0px 15px" }} />
+      <div className="cardContent">
+        <h3 style={{ paddingBottom: "5px" }}>{title}</h3>
       </div>
-    </div>
-  </Card>
-);
+      <div className="cardHidden">
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          {role} &ensp;
+          <Boop rotation={20} timing={200}>
+            <Click />
+          </Boop>
+        </div>
+        <div style={{ width: "60%", paddingTop: "10px" }}>{getImage(tag)}</div>
+      </div>
+    </Card>
+  );
+};
+
 export default withStyles(styles)(ProjectCard);

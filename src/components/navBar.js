@@ -25,7 +25,7 @@ const NavBar = ({ classes }) => {
         activeClassName={buttonStyles.active}
       >
         {" "}
-        <h4>writing</h4>{" "}
+        <h4>journalism</h4>{" "}
       </Link>
       <Link
         to="/projects"

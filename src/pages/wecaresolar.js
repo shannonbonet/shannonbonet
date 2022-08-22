@@ -1,13 +1,10 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import NavBar from "../components/navBar";
 import Layout from "../components/layout";
 import { withStyles } from "@material-ui/core";
 import { styles } from "../styles/customStyles";
 import ProjectPage from "../components/projectPage";
 import { StaticImage } from "gatsby-plugin-image";
-import Boop from "../components/boop";
-import UpArrow from "../assets/upArrow.svg";
 
 const WCS = ({ classes }) => (
   <Layout>
