@@ -8,19 +8,21 @@ import Boop from "../components/boop";
 
 const ProjectPage = ({ classes, title, role, github }) => {
   return (
-    <div style={{ padding: "0px 60px 0px 60px" }}>
+    <div style={{ paddingLeft: "20px" }}>
       <Link to="/projects">
-        {" "}
         <Boop rotation={20} timing={200}>
-          {" "}
-          <BackButton />{" "}
-        </Boop>{" "}
+          <BackButton />
+        </Boop>
       </Link>
       <div className={classes.project}>
         <h1>{title}</h1>
         <h3 style={{ marginBottom: "20px" }}>{role}</h3>
         <a href={github} target="_blank" style={{ textDecoration: "none" }}>
-          {github ? <GitHub className={classes.iconHover} /> : null}
+          {github ? (
+            <GitHub className={classes.iconHover} />
+          ) : (
+            <i>reach out for more!</i>
+          )}
         </a>
       </div>
     </div>

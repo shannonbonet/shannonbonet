@@ -108,10 +108,22 @@ const IndexPage = ({ classes }) => {
         <div className={classes.homeDown}>
           <Boop rotation={20} timing={200}>
             <a href="#home">
-              {" "}
-              <UpArrow />{" "}
+              <UpArrow />
             </a>
           </Boop>
+          <p>
+            <i> made with</i> ☕︎ & 💻{" "}
+            <i>
+              by
+              <a
+                className={classes.link}
+                href="https://www.linkedin.com/in/shannonbonet/"
+                target="_blank"
+              >
+                @shannonbonet
+              </a>
+            </i>
+          </p>
         </div>
       </div>
     </Layout>

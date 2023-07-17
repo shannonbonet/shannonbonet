@@ -52,23 +52,11 @@ export const styles = () =>
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      // flexWrap: 'wrap',
-    },
-    pageLeft: {
-      display: "flex",
-      flexDirection: "column",
-      padding: "0rem 10rem 0rem 10rem",
-    },
-    pageRight: {
-      display: "flex",
-      flexDirection: "row-reverse",
-      padding: "0rem 10rem 0rem 10rem",
     },
     homeDown: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      // flexWrap: 'wrap',
       paddingBottom: "50px",
     },
     grid: {
@@ -79,7 +67,7 @@ export const styles = () =>
     card: {
       display: "flex",
       flexDirection: "column",
-      width: "400px",
+      width: "350px",
       height: "300px",
       margin: "20px",
       boxShadow: theme.cardShadow,
