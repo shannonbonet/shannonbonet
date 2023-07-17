@@ -12,7 +12,7 @@ const WCS = ({ classes }) => (
     <div>
       <ProjectPage
         title={"we care solar"}
-        role={"software developer"}
+        role={"developer"}
         github={"https://github.com/calblueprint/wecaresolar"}
       />
       <div style={{ padding: "0px 100px 100px 100px" }}>

@@ -20,7 +20,7 @@ const ProjectPage = ({ classes, title, role, github }) => {
         <h1>{title}</h1>
         <h3 style={{ marginBottom: "20px" }}>{role}</h3>
         <a href={github} target="_blank" style={{ textDecoration: "none" }}>
-          <GitHub className={classes.iconHover} />
+          {github ? <GitHub className={classes.iconHover} /> : null}
         </a>
       </div>
     </div>

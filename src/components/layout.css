@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto Serif", sans-serif;
 }
 .thin {
   font-weight: 100;
@@ -51,10 +51,11 @@ h5 {
 p {
   font-size: 20px;
   line-height: 30px;
+  font-family: "Roboto Serif", serif;
 }
 
 ul {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px;
 }
 

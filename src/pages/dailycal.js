@@ -61,7 +61,7 @@ const DailyCal = ({ classes }) => (
         </div>
         <div className={classes.pageLeft}>
           <p>
-            Coming from a React background, I really tried to set my
+            Having React experience at this point, I really tried to set my
             inclinations aside when researching ways to bootstrap a site that
             would allow developers to 1) use Git version control to publish
             individual projects to one place, 2) embed data visualizations with

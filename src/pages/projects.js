@@ -21,7 +21,7 @@ const Projects = ({ classes }) => {
             marginBottom: "10vh",
           }}
         >
-          <h1 style={{ paddingBottom: "50px" }}>projects</h1>
+          <h1 style={{ paddingBottom: "50px" }}>the works</h1>
           <CardGrid cards={data} />
         </div>
       </a>

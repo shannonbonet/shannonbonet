@@ -48,13 +48,22 @@ const ProjectCard = ({ classes, title, tag, role }) => {
             height={200}
           />
         );
-      case "cmu":
+      case "wapo":
         return (
           <StaticImage
-            src={"../assets/cmu.svg"}
+            src={"../assets/wapo.svg"}
             placeholder="blurred"
             alt="project image"
-            width={250}
+            width={220}
+          />
+        );
+      case "cadence":
+        return (
+          <StaticImage
+            src={"../assets/cadence.svg"}
+            placeholder="blurred"
+            alt="project image"
+            width={220}
           />
         );
 
@@ -78,7 +87,13 @@ const ProjectCard = ({ classes, title, tag, role }) => {
         <h3 style={{ paddingBottom: "5px" }}>{title}</h3>
       </div>
       <div className="cardHidden">
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            fontFamily: "PT Sans",
+          }}
+        >
           {role} &ensp;
           <Boop rotation={20} timing={200}>
             <Click />

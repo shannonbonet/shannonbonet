@@ -33,7 +33,7 @@ const IndexPage = ({ classes }) => {
         setDisplayName(displayName.concat(name[index]));
         setIndex(index + 1);
       }
-    }, 200);
+    }, 75);
     return () => {
       clearTimeout(interval);
     };
@@ -63,7 +63,7 @@ const IndexPage = ({ classes }) => {
         <div className={classes.home}>
           <div style={{ width: "80%" }}>
             <AnimationOnScroll animateIn="animate__fadeInDown">
-              <h1>hello, i'm</h1>
+              <h1>hi, i'm</h1>
             </AnimationOnScroll>
             {getName(displayName)}
 
@@ -76,7 +76,10 @@ const IndexPage = ({ classes }) => {
                   alignItems: "flex-start",
                 }}
               >
-                <p>searching for a cool team to build something meaningful</p>
+                <p>
+                  and i'm searching for a cool team to build something
+                  meaningful
+                </p>
                 <TeaCup />
               </div>
             </AnimationOnScroll>

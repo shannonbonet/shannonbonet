@@ -13,27 +13,27 @@ const NavBar = ({ classes }) => {
         <Shelf />
       </Boop>
       <a
-        href="https://drive.google.com/file/d/1KVioIS9YjCIMMexTxy8lq4miqRa3w1Z5/view?usp=sharing"
+        href="https://drive.google.com/file/d/17fHX7z7qEjzXMZ01cRupbPbp-uIMzPnA/view?usp=sharing"
         className={buttonStyles.button}
         activeClassName={buttonStyles.active}
       >
         <h4>resume</h4>
       </a>
       <Link
-        to="/writing"
-        className={buttonStyles.button}
-        activeClassName={buttonStyles.active}
-      >
-        {" "}
-        <h4>journalism</h4>{" "}
-      </Link>
-      <Link
         to="/projects"
         className={buttonStyles.button}
         activeClassName={buttonStyles.active}
       >
         {" "}
-        <h4>projects</h4>
+        <h4>work</h4>
+      </Link>
+      <Link
+        to="/about"
+        className={buttonStyles.button}
+        activeClassName={buttonStyles.active}
+      >
+        {" "}
+        <h4>me</h4>{" "}
       </Link>
       <Link
         to="/"

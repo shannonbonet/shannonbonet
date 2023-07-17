@@ -29,14 +29,14 @@ export const styles = () =>
     },
     link: {
       textDecoration: "none",
-      padding: "0px 2px 0px 5px",
-      marginRight: "1px",
+      padding: "0px 5px 0px 5px",
+      margin: "0px 3px 0px 3px",
       borderRadius: "2px",
       color: theme.palette.black,
-      backgroundColor: theme.palette.isbelline,
+      backgroundColor: theme.palette.champangePink,
       "&:hover": {
         boxShadow: theme.linkHover,
-        backgroundColor: theme.palette.champangePink,
+        backgroundColor: theme.palette.hardPink,
         transform: "translate(0px, -7px)",
         transition: "all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)",
       },
