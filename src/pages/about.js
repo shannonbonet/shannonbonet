@@ -33,32 +33,27 @@ const About = ({ classes }) => {
           <p>
             Searching for full time software engineering positions. I want to
             work on projects with a tangible social impact that also technically
-            challenge me every (other) day.
-          </p>
-          <p>
-            Currently interning at The Washington Post as a software engineer on
-            the recipes team 👩‍🍳 ← me, chef
+            challenge me every (other) day. Most of my experience has been on
+            full stack projects, but I love learning anything new.
           </p>
           <p>
             <b>before</b>
           </p>
           <ul>
+            <li>SWE intern at The Washington Post, recipes team 👩‍🍳 </li>
             <li>
               SWE intern at Cadence, a $1B valuation health RPM startup 🚀 🦄
             </li>
             <li>President of Blueprint, Technology for Nonprofits 💙 </li>
-            <li>Head Projects Editor, The Daily Californian (data viz) 📊</li>
           </ul>
           <p>
             <b>ponderings</b>
           </p>
           <p>
-            I tend to think about my experiences as a function of the conditions
-            and environment that made me feel a particular way or form a certain
-            opinion. 🤔 Something I've realized is that a good team goes a long
-            way, but good leadership goes even further. Feedback is a two way
-            street. Problems exist, and the right people will make you feel
-            better about communicating what they are.
+            Something I've realized is that a good team goes a long way, but
+            good leadership goes even further. Feedback is a two way street.
+            Problems exist, and the right people will make you feel better about
+            communicating what those problems are.
           </p>
         </div>
       </div>

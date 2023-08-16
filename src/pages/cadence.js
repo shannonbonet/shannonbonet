@@ -36,16 +36,15 @@ const Cadence = ({ classes }) => (
           >
             Series B funding
           </a>
-          , and were growing an engineering team of seasoned and driven people
-          with a capacity for mentorship and dedication to quality that I sensed
-          was special.
+          , and were growing an engineering team of driven people with a
+          dedication to quality that I sense was special.
         </p>
         <p>
           I was given a lot of autonomy over my work here, where I built the
-          company's first internal tool for the AI team to monitor model results
-          on health data. Something I learned to embrace was pushing forward
-          with an implementation even when I really did not know what was going
-          on 💀. Working in frameworks like
+          company's first internal FE tool for the AI team to monitor model
+          results on health data. Something I learned to embrace was pushing
+          forward with an implementation even when I really did not know what
+          was going on. Working in frameworks like
           <a
             className={classes.link}
             href="https://bazel.build/"
@@ -53,9 +52,9 @@ const Cadence = ({ classes }) => (
           >
             Bazel
           </a>
-          with limited to no frontend examples made configurations that I
+          with limited open source examples actually made configurations I
           already thought challenging (user auth, linting, querying, global
-          contexts, etc.) the easier parts of development.
+          contexts, etc) the easier parts of development.
         </p>
         <h2>learnings</h2>
         <div>
